@@ -115,7 +115,7 @@
 - (BOOL)isEqual: (id)other
 {
     return [other isKindOfClass: [RTIvar class]] &&
-           [[self name] isEqual: [other name]] &&
+           [[self name] isEqual: [(RTIvar *)other name]] &&
            [[self typeEncoding] isEqual: [other typeEncoding]];
 }
 
